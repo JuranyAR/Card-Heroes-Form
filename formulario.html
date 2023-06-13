@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Heroes</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles-form.css">
+</head>
+<body>
+    <div class="top">
+        <span>20% de descuento en todos los productos!</span>
+    </div>
+    <header>
+        <img src="./images/logo.svg" alt="logo">
+        <h1>Nombre Tienda</h1>
+    </header>
+    <ul>
+        <li>Contacto</li>
+        <li>Registrarme</li>
+        <li>Ingresar</li>
+    </ul>
+    <main>
+        <form class="form"  action="">
+            <h2>Añadí tu super!</h2>
+            <p>Agregá tu personaje favorito completando las opciones.</p>
+            <div class="fields">
+                <div>
+                    <label for="nombre">*Nombre</label>
+                    <input type="text" class="input" name="nombre" id="nombre" required>
+                </div>
+                <div>
+                    <label for="especie">*Especie</label>
+                    <select name="especie" id="especie" required>
+                        <option value="" disabled selected>Especie</option>
+                        <option value="Unknown">Unknown</option>
+                        <option value="Cosmicos">Cosmicos</option>
+                    </select>
+                </div>
+            </div>
+            <div class="fields">
+                <div>
+                    <label for="fecha">Fecha</label>
+                    <input type="date" class="input" name="fecha" id="fecha">
+                </div>
+                <div>
+                    <label for="agregarFoto">Agregar Foto</label>
+                    <input type="file"  name="agregarFoto" id="agregarFoto">
+                </div>
+            </div>
+            <div class="fields">
+                <div>
+                    <textarea
+                      placeholder="Descripción"
+                      name="descripcion"
+                      id="descripcion"
+                      cols="30"
+                      rows="5"
+                    ></textarea>
+                </div>
+                <div>
+                    <label for="poderes">Poderes</label>
+                    <label for="Volar">
+                        <input type="checkbox" name="poderes" class="largerInput" id="Volar" value="Volar" />
+                        Volar
+                    </label>
+                    <label for="superInteligencia">
+                        <input type="checkbox" name="poderes" class="largerInput" id="superInteligencia" value="superInteligencia" />
+                        SuperInteligencia
+                    </label>
+                    <label for="rayoLaser">
+                        <input type="checkbox" name="poderes" class="largerInput" id="rayoLaser" value="rayoLaser" />
+                        Vista de rayo láser
+                    </label>
+                    <label for="billetera">
+                        <input type="checkbox" name="poderes" class="largerInput" id="billetera" value="billetera" />
+                        Billetera gorda
+                    </label>
+                    <hr/>
+                    <label for="personaje" class="top-label">Tipo de personaje</label>
+                    <label for="heroeHeroina">
+                        <input type="radio" name="heroeHeroina" class="largerInput" id="heroeHeroina" value="heroeHeroina" />
+                        Héroe / Heroina
+                    </label>
+                    <label for="villano">
+                        <input type="radio" class="largerInput"  name="villano" id="villano" value="villano" />
+                        Villano / Villana
+                    </label>
+                </div>
+            </div>
+            <input type="submit" value="Añadir" class="submit" />
+        </form>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados a FRONT END 1</p>
+    </footer>
+</body>
+</html>
