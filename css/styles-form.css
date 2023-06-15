@@ -89,3 +89,41 @@ input::file-selector-button {
     font-size: 40px;
     min-width: 400px;
 }
+.submit:hover{
+    background-color: #001D2D;
+    color: #fff   
+}
+input:invalid, input:invalid:focus-visible, input:invalid:focus{
+    border: 2px solid red;
+    outline-color: #f00;
+}
+
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    background-color: #fff;
+}
+  
+
+input[type="radio"]:checked {
+    background-color: #4DD1FB;
+}
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+  
+input[type="checkbox"]:checked {
+    background: url('../images/checked.png') no-repeat center center #4DD1FB;
+}

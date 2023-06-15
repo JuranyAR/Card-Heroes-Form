@@ -42,6 +42,9 @@ main> section{
     margin-bottom: 15px;
     border-radius: 16px 16px 0px 0px;
 }
+main>section:hover{
+    scale: 1.05;
+}
 ul{
     background-color: #001D2D;
     color: white;
@@ -51,11 +54,25 @@ ul{
     gap: 20px;
     padding: 10px;
 }
+ul li:hover{
+    text-decoration: underline;
+    color: #00669F;
+    font-weight: 700;
+}
+
 .plus{
     position:fixed;
     right: 34px;
     z-index: 100;
+    background-image: url('../images/Button.png');
+    height: 82px;
+    width: 82px;
 }
+
+.plus:hover{
+    background-image: url('../images/button_hover.png');
+}
+
 main > section>article{
     position: relative;
 }
@@ -105,6 +122,10 @@ main > section>article{
     background-color: #00669F;
     border: none;
     color: #F3F3F3;
+}
+.profile div> button:hover{
+    background-color: #001D2D;
+    font-weight: 700;
 }
 section{
     background-color: #F3F3F3;
